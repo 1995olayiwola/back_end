@@ -1,0 +1,4 @@
+{"level":"warn","message":"DeprecationWarning: The Parse Server option 'encodeParseObjectInCloudFunction' default will change to 'true' in a future version.","timestamp":"2024-07-23T10:55:09.161Z"}
+{"level":"info","message":"Parse LiveQuery Server started running","timestamp":"2024-07-23T10:55:12.023Z"}
+{"level":"warn","message":"DeprecationWarning: The Parse Server option 'encodeParseObjectInCloudFunction' default will change to 'true' in a future version.","timestamp":"2024-07-23T11:07:33.213Z"}
+{"level":"info","message":"Parse LiveQuery Server started running","timestamp":"2024-07-23T11:07:33.611Z"}
