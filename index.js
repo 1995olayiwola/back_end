@@ -12,7 +12,7 @@ const api = new ParseServer({
     cloud:__dirname + '/cloud/main.js',
     appId:"ola_id",
     masterKey:"ola_master",
-    serverURL:"http://localhost:1337/parse",
+    serverURL:"https://back-end-jx7n.onrender.com/parse",
     liveQuery:{
       classNames:['Task',"Chat"]
     }
@@ -28,7 +28,7 @@ var dashboard = ParseDashboard(
     {
       apps: [
         {
-          serverURL:"http://localhost:1337/parse",
+          serverURL:"https://back-end-jx7n.onrender.com/parse",
           appId:"ola_id" ,
           masterKey:"ola_master",
           appName: 'Olatech-e-commerce'
