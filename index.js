@@ -19,7 +19,8 @@ const api = new ParseServer({
     // Enable email verification
  verifyUserEmails: true,
  preventLoginWithUnverifiedEmail: true,
-
+publicServerURL: "https://back-end-jx7n.onrender.com/parse",
+appName: 'Olatech-e-commerce',
  emailAdapter: {
    module: 'parse-server-dedicated-email-adapter',
    options: {
