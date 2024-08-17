@@ -15,7 +15,22 @@ const api = new ParseServer({
     serverURL:"https://back-end-jx7n.onrender.com/parse",
     liveQuery:{
       classNames:['Task',"Chat"]
-    }
+    },
+    // Enable email verification
+ verifyUserEmails: true,
+ preventLoginWithUnverifiedEmail: true,
+
+ emailAdapter: {
+   module: 'parse-server-dedicated-email-adapter',
+   options: {
+     host: 'smtp.gmail.com',
+     port: 465,
+     secure: true,
+     email: 'olayiwolarahmon4@gmail.com',
+     password: 'olayiwola12345' //https://myaccount.google.com/security, Less secure app access to on
+   }
+  }
+
   
   })
 
@@ -23,6 +38,7 @@ const api = new ParseServer({
   app.use('/parse',api.app)
   //dashboard
 var options = { allowInsecureHTTP: false};
+ 
 
 var dashboard = ParseDashboard(
     {
